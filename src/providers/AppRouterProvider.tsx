@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 //
-import AuthPage from "../modules/AuthPage/AuthPage";
-import AccountPage from "../modules/AccountPage/AccountPage";
-import PeoplePage from "../modules/PeoplePage/PeoplePage";
+import { AuthPage } from "../modules/AuthPage/AuthPage";
+import { AccountPage } from "../modules/AccountPage/AccountPage";
+import { PeoplePage } from "../modules/PeoplePage/PeoplePage";
 
 
 

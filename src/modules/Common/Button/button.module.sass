@@ -1,0 +1,43 @@
+
+.button
+    height: 2.0rem
+
+    display: flex
+    justify-content: center
+    align-items: center
+
+    border: 1px solid #434343
+    border-radius: 4px
+
+.button-blue
+    border-color: #0176d3
+    background-color: #0176d3
+
+    &:focus, &:hover
+        border-color: #0b5cab
+        background-color: #0b5cab
+    &:active
+        border-color: #014486
+        background-color: #014486
+    &:disabled
+        border-color: #c9c7c5
+        background-color: #c9c7c5
+
+.button-red
+    border-color: #ea001e
+    background-color: #ea001e
+
+    &:focus, &:hover
+        border-color: #ba0517
+        background-color: #ba0517
+    &:active
+        border-color: #8e030f
+        background-color: #8e030f
+    &:disabled
+        border-color: #c9c7c5
+        background-color: #c9c7c5
+
+.label
+    font-size: 1.25rem
+    text-transform: uppercase
+    color: #fff

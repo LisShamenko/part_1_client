@@ -1,0 +1,20 @@
+@import './../../index'
+
+.people-page
+    --header-height: #{$header-height}
+
+    position: absolute
+    left: 0
+    top: var(--header-height)
+    z-index: 0
+
+    width: 100%
+    height: calc( 100% - var(--header-height) )
+
+    display: flex
+    align-content: stretch
+    flex-wrap: wrap
+    justify-content: space-evenly
+
+.people-page .card
+    margin: 1rem 0
