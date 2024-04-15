@@ -1,5 +1,5 @@
 import { createContext, useContext } from "react";
-import { RootStore } from "../stores/root-store";
+import { RootStore } from "../stores/root.store";
 
 
 

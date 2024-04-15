@@ -5,7 +5,7 @@ import { spy } from 'mobx';
 import ReactQueryProvider from './providers/ReactQueryProvider';
 import AppRouterProvider from './providers/AppRouterProvider';
 import { RootStoreProvider } from './providers/RootStoreProvider';
-import store from './stores/root-store';
+import store from './stores/root.store';
 
 
 
@@ -30,7 +30,8 @@ root.render(
     <React.StrictMode>
         <RootStoreProvider value={store}>
             <ReactQueryProvider>
-                <button onClick={() => console.log('--- store = ' + JSON.stringify(store.getState()))}>
+                <button style={{ position: 'absolute', zIndex: 1000 }}
+                    onClick={() => console.log('--- store = ' + JSON.stringify(store.getState()))}>
                     Store to console.
                 </button>
                 <AppRouterProvider />

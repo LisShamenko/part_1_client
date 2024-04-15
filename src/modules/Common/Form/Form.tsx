@@ -9,7 +9,7 @@ import { Line } from "../Line/Line";
 // 
 interface IProps {
     cs?: string,
-    name: string,
+    name?: string,
     title?: string,
     action: string,
     onSubmit?: (e: FormEvent<HTMLFormElement>) => boolean,
@@ -17,7 +17,8 @@ interface IProps {
 
 export const Form = (
     {
-        children, cs = '', name, title, action, onSubmit,
+        children, cs = '', name = '', title = '',
+        action, onSubmit,
     }: PropsWithChildren<IProps>
 ): JSX.Element => {
 

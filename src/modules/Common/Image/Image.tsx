@@ -1,4 +1,5 @@
 import s from './image.module.sass';
+import { baseURL } from '../../../api/accountsAPI';
 
 
 
@@ -15,9 +16,17 @@ export const Image = (
     }: IProps
 ): JSX.Element => {
 
+    const getSrc = () => {
+        if (src) {
+            const url = new URL(src, baseURL);
+            return url.toString();
+        }
+        return '';
+    }
+
     return (
         <img className={cs + ' ' + s['image']}
-            alt={label} src={src}
+            alt={label} src={getSrc()}
         />
     );
 }
